@@ -1,0 +1,34 @@
+<div class="container">
+    <did class="row" style="margin: 200px 0">
+        <div class="col">
+            <form action="/admin/login" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" 
+                    class="form-label">Ingrese Usuario</label>
+                    <input type="text" class="form-control" 
+                    placeholder="Usuario" name="usuario"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" 
+                    class="form-text">Usuario.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" 
+                    class="form-label">Password</label>
+                    <input type="password" class="form-control"
+                     id="exampleInputPassword1"
+                    placeholder="Contaseña" name="password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
+            {{#if error}}
+            <p>Usuario y/o contraseña incorrecto</p>
+            {{/if}}
+        </div>
+    </did>
+
+</div>
